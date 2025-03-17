@@ -5,9 +5,11 @@ import Result from "./Result";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
-  function handleRespnse(response) {
-    console.log(response.data.meanings[0]);
+  function handleResponse(response) {
+    console.log(response.data);
+    setResults(response.data);
   }
 
   function search(event) {
@@ -18,7 +20,7 @@ export default function Dictionary() {
     let apiKey = "c20161a98fff44a06b23236e2obd0t3b";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
 
-    axios.get(apiUrl).then(handleRespnse);
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleKeywordChange(event) {
@@ -31,7 +33,7 @@ export default function Dictionary() {
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
       </form>
-      <Result />
+      <Result result={results} />
     </div>
   );
 }
