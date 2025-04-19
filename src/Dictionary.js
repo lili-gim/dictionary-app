@@ -6,10 +6,12 @@ import Result from "./Result";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  let [phonetic, setPhonetics] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
+    //console.log(response.data);
     setResults(response.data);
+    setPhonetics(response.data.phonetic);
   }
 
   function search(event) {
@@ -24,7 +26,7 @@ export default function Dictionary() {
   }
 
   function handleKeywordChange(event) {
-    console.log(event);
+    //console.log(event);
     setKeyword(event.target.value);
   }
 
@@ -33,7 +35,7 @@ export default function Dictionary() {
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
       </form>
-      <Result result={results} />
+      <Result result={results} phonetic={phonetic} />
     </div>
   );
 }
