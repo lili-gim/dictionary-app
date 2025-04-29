@@ -8,6 +8,13 @@ function App() {
       <header className="App-header"></header>
       <img src={logo} className="App-logo" alt="logo" />
       <Dictionary defaultKeyword="word" />
+      <footer>
+        This project was coded by Lili Gim and is{" "}
+        <a href="https://github.com/lili-gim/dictionary-app">
+          open-sourced on GitHub
+        </a>{" "}
+        and <a href="https://abc-dictionary.netlify.app/">hosted on Netlify</a>
+      </footer>
     </div>
   );
 }

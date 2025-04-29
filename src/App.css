@@ -18,3 +18,14 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+footer {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 14px;
+}
+
+a {
+  color: #f1ebde;
+  text-decoration: none;
+}
