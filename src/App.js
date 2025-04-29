@@ -10,10 +10,13 @@ function App() {
       <Dictionary defaultKeyword="word" />
       <footer>
         This project was coded by Lili Gim and is{" "}
-        <a href="https://github.com/lili-gim/dictionary-app">
+        <a href="https://github.com/lili-gim/dictionary-app" target="_blank">
           open-sourced on GitHub
         </a>{" "}
-        and <a href="https://abc-dictionary.netlify.app/">hosted on Netlify</a>
+        and{" "}
+        <a href="https://abc-dictionary.netlify.app/" target="_blank">
+          hosted on Netlify
+        </a>
       </footer>
     </div>
   );
