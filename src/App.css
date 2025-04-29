@@ -1,11 +1,12 @@
+body {
+  background: #f98866;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .App {
   max-width: 960px;
   margin: 0 auto;
   background: #f98866;
-}
-.App body {
-  background: #f98866;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .App-header {
