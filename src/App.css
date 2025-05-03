@@ -31,7 +31,7 @@ a {
 }
 
 @media (max-width: 960px) {
-  body {
-    padding: 60px 0;
+  .Dictionary {
+    margin: 0px;
   }
 }
