@@ -29,3 +29,9 @@ a {
   color: #f1ebde;
   text-decoration: none;
 }
+
+@media (max-width: 960px) {
+  body {
+    padding: 60px 0;
+  }
+}
