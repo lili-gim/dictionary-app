@@ -29,9 +29,3 @@ a {
   color: #f1ebde;
   text-decoration: none;
 }
-
-@media (max-width: 960px) {
-  .Dictionary {
-    margin: 0px;
-  }
-}

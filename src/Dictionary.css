@@ -28,4 +28,10 @@
   .Dictionary {
     margin: 30px;
   }
+  .Dictionary .Photo {
+    padding: 10px 20px;
+  }
+  .Dictionary .Photo .col-4 {
+    padding: 0 5px;
+  }
 }
